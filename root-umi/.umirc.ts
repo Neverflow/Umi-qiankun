@@ -29,6 +29,21 @@ export default defineConfig({
       path: '/table',
       component: './Table',
     },
+    {
+      name: 'Vue App',
+      path: '/vue-app',
+      microApp: 'mirco-app-vue'
+    }
   ],
   npmClient: 'pnpm',
+  qiankun: {
+    master: {
+      apps: [
+        {
+          name: 'mirco-app-vue',
+          entry: '//localhost:8080',
+        },
+      ],
+    },
+  },
 });

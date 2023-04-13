@@ -2,6 +2,9 @@
   "folders": [
     {
       "path": "root-umi/"
+    },
+    {
+      "path": "mirco-app-vue/"
     }
   ]
 }
