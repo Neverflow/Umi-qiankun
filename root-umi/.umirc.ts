@@ -31,9 +31,14 @@ export default defineConfig({
     },
     {
       name: 'Vue App',
-      path: '/vue-app',
-      microApp: 'mirco-app-vue'
-    }
+      path: '/vue-app/*',
+      microApp: 'mirco-app-vue',
+    },
+    {
+      name: 'Vue Iframe',
+      path: 'vue-iframe',
+      component: './vue-iframe',
+    },
   ],
   npmClient: 'pnpm',
   qiankun: {
