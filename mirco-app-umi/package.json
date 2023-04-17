@@ -1,4 +1,5 @@
 {
+  "name": "mirco-app-umi",
   "private": true,
   "author": "yuanzhihao <yuanzhihao@sobey.com>",
   "scripts": {

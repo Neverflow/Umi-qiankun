@@ -39,6 +39,11 @@ export default defineConfig({
       path: 'vue-iframe',
       component: './vue-iframe',
     },
+    {
+      name: 'Umi App',
+      path: '/umi-app/*',
+      microApp: 'mirco-app-umi',
+    },
   ],
   npmClient: 'pnpm',
   qiankun: {
@@ -48,7 +53,12 @@ export default defineConfig({
           name: 'mirco-app-vue',
           entry: '//localhost:8080',
         },
+        {
+          name: 'mirco-app-umi',
+          entry: '//localhost:8081',
+        },
       ],
+      sandbox: true,
     },
   },
 });
